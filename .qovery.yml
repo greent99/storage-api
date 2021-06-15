@@ -1,14 +1,15 @@
+---
 application:
-  name: simple-example-node
-  project: getting-started
-  publicly_accessible: true
+  name: "storage-api"
+  project: "storage-api"
+  organization: "QoveryCommunity"
 databases:
-- type: mysql
-  version: 8.0
-  name: my-mysql
+- type: "MYSQL"
+  name: "doan_cnpm"
+  version: "8.0"
 routers:
-- name: main
+- name: "main-storage-api"
   routes:
-  - application_name: simple-example-node
+  - application_name: "storage-api"
     paths:
-    - /
+    - "/*"
