@@ -1,0 +1,14 @@
+application:
+  name: simple-example-node
+  project: getting-started
+  publicly_accessible: true
+databases:
+- type: mysql
+  version: 8.0
+  name: my-mysql
+routers:
+- name: main
+  routes:
+  - application_name: simple-example-node
+    paths:
+    - /
